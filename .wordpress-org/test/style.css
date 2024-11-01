@@ -1,0 +1,442 @@
+
+
+/*
+1. CSS reset
+html5doctor.com Reset Stylesheet
+Update from Eric's Meyer's work for html5
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+======>> Afblijven, dit is puur voor de CSS reset!!
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+a img {
+	border: none;
+}
+
+/* Einde CSS reset. Edit vanaf hier
+-------------------------------------------------------------- */
+
+
+/* 2. Fonts
+-------------------------------------------------------------- */
+body {
+	font-family: Trebuchet MS, Verdana, sans-serif;
+}
+
+pre {
+	font-family: "Courier 10 Pitch", Courier, monospace;
+}
+code {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+/* 3. Globale Elementen
+-------------------------------------------------------------- */
+
+/* Main global 'theme' and typographic styles */
+body {
+	font-size: 12px;
+	line-height: 18px;
+	text-rendering: optimizelegibility;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	line-height: 1.1em;
+	margin: 0 0 10px 0;
+}
+hr {
+	background-color: #e7e7e7;
+	border: 0;
+	height: 1px;
+	margin-bottom: 18px;
+}
+
+/* Text elements */
+p {
+	margin-bottom: 10px;
+}
+ul {
+	list-style: disc;
+	margin: 0 0 18px 1.5em;
+}
+ol {
+	list-style: decimal;
+	margin: 0 0 18px 1.5em;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+	margin-bottom: 0;
+}
+dl {
+	margin: 0 0 24px 0;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 18px;
+}
+strong {
+	font-weight: bold;
+}
+cite,
+em,
+i {
+	font-style: italic;
+}
+small {
+	font-size: 64%;
+}
+big {
+	font-size: 131.25%;
+}
+ins {
+	background: #ffc;
+	text-decoration: none;
+}
+blockquote {
+	font-style: italic;
+	padding: 0 3em;
+}
+blockquote cite,
+blockquote em,
+blockquote i {
+	font-style: normal;
+}
+pre {
+	background: #f7f7f7;
+	line-height: 18px;
+	margin-bottom: 18px;
+	padding: 1.5em;
+}
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+.clear {
+	clear: both;
+}
+a:link,
+a:visited {
+	color: blue;
+	text-decoration: none;
+}
+a:active,
+a:hover,
+a.hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+/* Reset non-text input types */
+input[type="checkbox"],
+input[type="radio"],
+input[type="file"],
+input[type="hidden"],
+input[type="image"],
+input[type="week"],
+input[type="month"],
+input[type="number"],
+input[type="tag"],
+input[type="range"],
+input[type="search"],
+input[type="email"],
+input[type="tel"],
+input[type="time"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="url"],
+input[type="password"],
+input[type="color"] {
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+}
+
+/* text, html5 inputs en textarea */
+input[type="text"],
+input[type="file"],
+input[type="hidden"],
+input[type="image"],
+input[type="week"],
+input[type="month"],
+input[type="number"],
+input[type="tag"],
+input[type="range"],
+input[type="search"],
+input[type="email"],
+input[type="tel"],
+input[type="time"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="url"],
+input[type="password"],
+input[type="color"],
+textarea {
+	background: #f9f9f9;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	padding: 6px 10px;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+	padding: 6px 10px;
+	font-size: 13px;
+	line-height: 1.428571429;
+	font-weight: normal;
+	color: #333;
+	background-color: #e6e6e6;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, #f4f4f4, #e6e6e6);
+	background-image: -ms-linear-gradient(top, #f4f4f4, #e6e6e6);
+	background-image: -webkit-linear-gradient(top, #f4f4f4, #e6e6e6);
+	background-image: -o-linear-gradient(top, #f4f4f4, #e6e6e6);
+	background-image: linear-gradient(top, #f4f4f4, #e6e6e6);
+	border: 1px solid #d2d2d2;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1);
+}
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+	cursor: pointer;
+}
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+	color: #5e5e5e;
+	background-color: #ebebeb;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: -ms-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: -webkit-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: -o-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: linear-gradient(top, #f9f9f9, #ebebeb);
+}
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
+	color: #333;
+	background-color: #e1e1e1;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, #ebebeb, #e1e1e1);
+	background-image: -ms-linear-gradient(top, #ebebeb, #e1e1e1);
+	background-image: -webkit-linear-gradient(top, #ebebeb, #e1e1e1);
+	background-image: -o-linear-gradient(top, #ebebeb, #e1e1e1);
+	background-image: linear-gradient(top, #ebebeb, #e1e1e1);
+	box-shadow: inset 0 0 8px 2px #c6c6c6, 0 1px 0 0 #f4f4f4;
+}
+
+select {
+	background: #f9f9f9;
+	padding: 5px;
+	line-height: 1;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	/* -webkit-appearance: none; */
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+
+
+/* 4. Layout met 2 kolommen
+--------------------------------------------------------- */
+
+#wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+}
+#container {
+	margin: 0;
+	clear: both;
+}
+#content {
+	float: left;
+	margin: 0;
+	max-width: 760px;
+}
+
+
+/* Banners */
+.banner {
+	position: relative;
+	margin: 20px auto;
+	background-repeat: no-repeat;
+	width: 772px;
+	height: 250px;
+	padding: 0;
+}
+.banner.first {
+	background-image: url('banner-772x250_sculptures.png');
+}
+.banner.second {
+	background-image: url('banner-772x250_toy_soldier.png');
+}
+.banner.third {
+	background-image: url('banner-772x250_woman_yellow.png');
+}
+
+
+
+/* Inputs */
+.banner input {
+	position: absolute;
+	right: 120px;
+	width: 300px;
+}
+
+.banner.first input.first {
+	top: 60px;
+}
+.banner.first input.second {
+	top: 100px;
+}
+.banner.first input.third {
+	top: 140px;
+}
+
+.banner.second input.first {
+	top: 50px;
+}
+.banner.second input.second {
+	top: 90px;
+}
+.banner.second input.third {
+	top: 130px;
+}
+
+.banner.third input.first {
+	top: 45px;
+}
+.banner.third input.second {
+	top: 85px;
+}
+.banner.third input.third {
+	top: 125px;
+}
+
+
+
